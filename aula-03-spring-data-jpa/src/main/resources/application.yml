@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: curso
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_carro?useTimezone=true&serverTimezone=UTC
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+    show-sql: true
+    open-in-view: false
+
+# Aqui podemos alterar o nivel de log para achar erros mais complexos, nivel mais detalhado e o DEBUG e o TRACE
+logging:
+  level:
+    #root: WARN
+    br.otymus.curso: DEBUG
+
